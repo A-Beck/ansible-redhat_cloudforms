@@ -47,6 +47,7 @@ Performs a migration from CFME 5.8 to 5.9 utilizing steps from [Migrating to Red
 
 ### rolling-update.yml
 Performs an update/upgrade of all packages on the CFME appliances and performs a reboot if necessary.
+Follows instructions from the [Red Hat Knowledge Base](https://access.redhat.com/solutions/3138181).
 
 #### Required groups
 * cfme
