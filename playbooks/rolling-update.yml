@@ -54,7 +54,7 @@
   import_playbook: health-check.yml
 
 - name: CFME | Rolling Update | Reset ManageIQ and Red Hat Automate Domains
-  hosts: cfme-appliances:!cfme-databases
+  hosts: cfme-ui-appliances
   become: True
   gather_facts: False
   tasks:
