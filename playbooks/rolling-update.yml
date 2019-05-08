@@ -50,6 +50,9 @@
       include_tasks: tasks/update-packages.yml
       when: packages_need_update_result is changed
 
+- name: CFME | Rolling Update | Check that the CFME API reports ready
+  import_playbook: health-check.yml
+
 - name: CFME | Rolling Update | Reset ManageIQ and Red Hat Automate Domains
   hosts: cfme-appliances:!cfme-databases
   become: True
